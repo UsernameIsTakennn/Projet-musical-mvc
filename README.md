@@ -1,4 +1,4 @@
 # Projet musical mvc
 
-TP2
+TP 2
 Migration du projet vers l’architecture MVC - PHPOO
