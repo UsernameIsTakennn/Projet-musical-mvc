@@ -1,0 +1,272 @@
+/* Palette couleur */
+/* #f5f1f8 */
+/* #2b2033 */
+/* #4b2354 */
+/* #7b3f8c */
+/* #c0448f */
+/* #2d1938 */
+/* #f0a6ca */
+/* #c9b7cf */
+/* #a04491 */
+
+
+
+/* =========================
+   STYLE GÉNÉRAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #f5f1f8;
+    color: #2b2033;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #4b2354;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+a {
+    color: #7b3f8c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0448f;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2d1938;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f0a6ca;
+}
+
+
+/* =========================
+   FORMULAIRES
+   ========================= */
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #c9b7cf;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #a04491;
+}
+
+
+/* =========================
+   BOUTONS
+   ========================= */
+
+/* Boutons des formulaires */
+form input[type="submit"] {
+    width: auto;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7b3f8c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 rgba(45, 25, 56, 0.25);
+}
+
+form input[type="submit"]:hover {
+    background-color: #c0448f;
+    color: white;
+}
+
+
+/* Boutons de création */
+.btn-create {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: #7b3f8c;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 rgba(45, 25, 56, 0.25);
+}
+
+.btn-create:hover {
+    background-color: #c0448f;
+    color: white;
+}
+
+
+/* Bouton Modifier */
+.bouton_modifier {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: #7b3f8c;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 rgba(45, 25, 56, 0.25);
+}
+
+.bouton_modifier:hover {
+    background-color: #c0448f;
+    color: white;
+}
+
+
+/* Bouton Supprimer */
+form input[type="submit"][value="Supprimer"] {
+    background-color: #a83252;
+    color: white;
+    box-shadow: 3px 3px 0 rgba(45, 25, 56, 0.25);
+}
+
+form input[type="submit"][value="Supprimer"]:hover {
+    background-color: #d14d70;
+    color: white;
+}
+
+
+/* =========================
+   TABLEAUX
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(45, 25, 56, 0.08);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2d8e5;
+    text-align: left;
+}
+
+th {
+    background-color: #4b2354;
+    color: white;
+}
+
+tr:hover {
+    background-color: #faf5fc;
+}
+
+
+/* Boutons "Voir" dans les tableaux */
+td a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: #7b3f8c;
+    color: white;
+    font-weight: bold;
+}
+
+td a:hover {
+    background-color: #c0448f;
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    background-color: #2d1938;
+    color: white;
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
